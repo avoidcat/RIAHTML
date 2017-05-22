@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="note_error_archivos/intl.css" type="text/css"?>
+<parsererror xmlns="http://www.mozilla.org/newlayout/xml/parsererror.xml">Error de análisis XML: etiqueta sin par. Se esperaba: &lt;/from&gt;.
+Ubicación: https://www.w3schools.com/xml/note_error.xml
+Línea 4, columna 15:<sourcetext>  &lt;from&gt;Jani&lt;/Ffrom&gt;
+--------------^</sourcetext></parsererror>
