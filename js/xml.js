@@ -95,8 +95,9 @@ function displayCdCollection(data){
 				      '</div>'+
 				    '</div>'+
 				  '</div>';
-		$("#xml-query-results").append(node);
-
+		
+		$(node).hide().appendTo($("#xml-query-results")).fadeIn(500);
+		
 	});
 }
 function displayPlantCollection(data){
@@ -122,8 +123,7 @@ function displayPlantCollection(data){
 				      '</div>'+
 				    '</div>'+
 				  '</div>';
-		$("#xml-query-results").append(node);
-
+		$(node).hide().appendTo($("#xml-query-results")).fadeIn(500);
 	});
 }
 function displayBookCollection(data){
@@ -145,8 +145,9 @@ function displayBookCollection(data){
 				      '</div>'+
 				    '</div>'+
 				  '</div>';
-		$("#xml-query-results").append(node);
-
+		
+		$(node).hide().appendTo($("#xml-query-results")).fadeIn(500);
+		
 	});
 }
 function displayFoodCollection(data){
@@ -169,7 +170,8 @@ function displayFoodCollection(data){
 				      '</div>'+
 				    '</div>'+
 				  '</div>';
-		$("#xml-query-results").append(node);
+		
+		$(node).hide().appendTo($("#xml-query-results")).fadeIn(500);
 		
 	});
 }
