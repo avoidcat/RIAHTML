@@ -43,6 +43,8 @@ $(document).ready(function(){
 		removeActive();
 		$("#btn-collection-food").parent().addClass("active");
 	});
+
+
 });
 
 function showCollection(documentName,collectionType){
@@ -54,6 +56,9 @@ function showCollection(documentName,collectionType){
 				displayCdCollection(xml);
 				break;
 			case "food":
+				
+				displayFoodCollection(xml);
+
 				break;
 			case "plant":
 				displayPlantCollection(xml);
@@ -78,9 +83,9 @@ function displayCdCollection(data){
 		var company = $(this).find("COMPANY").text();
 		var price = $(this).find("PRICE").text();
 		var year = $(this).find("YEAR").text();
-		node = '<div class="col-xs-6 col-md-4">'+
+		node = '<div class="col-xs-12 col-sm-6 col-md-4">'+
 				    '<div class="thumbnail">'+
-				      '<img src="images/cd-icon.png" alt="cd">'+
+				      '<img src="images/cd-icon.png" alt="cd" class="img-thumbnail">'+
 				      '<div class="caption">'+
 				        '<h3>'+title+'</h3>'+
 				        '<p><span clas="thumnail-text-bold">Arist:</span>'+artist+'</p>'+
@@ -104,9 +109,9 @@ function displayPlantCollection(data){
 		var light = $(this).find("LIGHT").text()
 		var price = $(this).find("PRICE").text()
 		var availability = $(this).find("AVAILABILITY").text()
-		node = '<div class="col-xs-6 col-md-4">'+
+		node = '<div class="col-xs-12 col-sm-6 col-md-4">'+
 				    '<div class="thumbnail">'+
-				      '<img src="images/plant-icon.png" alt="cd">'+
+				      '<img src="images/plant-icon.png" alt="plant" class="img-thumbnail">'+
 				      '<div class="caption">'+
 				        '<h3>'+common+'</h3>'+
 				        '<p><span clas="thumnail-text-bold">Botanical:</span>'+botanical+'</p>'+
@@ -126,12 +131,12 @@ function displayBookCollection(data){
 	$(data).find("book").each(function(){
 		var node;
 		var title = $(this).find("title").text();
-		var author = $(this).find("author").text();
+		var author = $(this).find("author").first().text();
 		var year = $(this).find("year").text();
 		var price = $(this).find("price").text();
-		node = '<div class="col-xs-6 col-md-4">'+
+		node = '<div class="col-xs-12 col-sm-6 col-md-4">'+
 				    '<div class="thumbnail">'+
-				      '<img src="images/book-icon.png" alt="cd">'+
+				      '<img src="images/book-icon.png" alt="book" class="img-thumbnail">'+
 				      '<div class="caption">'+
 				        '<h3>'+title+'</h3>'+
 				        '<p><span clas="thumnail-text-bold">Author:</span>'+author+'</p>'+
@@ -146,20 +151,18 @@ function displayBookCollection(data){
 }
 function displayFoodCollection(data){
 	$("#xml-query-results").empty();
-	$(data).find("book").each(function(){
+	$(data).find("food").each(function(){
 		var node;
 		var name = $(this).find("name").text();
 		
 		var price = $(this).find("price").text();
 		var description = $(this).find("description").text();
 		var calories = $(this).find("calories").text();
-		node = '<div class="col-xs-6 col-md-4">'+
+		node = '<div class="col-xs-12 col-sm-6 col-md-4">'+
 				    '<div class="thumbnail">'+
-				      '<img src="images/food-icon.png" alt="cd">'+
+				      '<img src="images/food-icon.png" alt="food" class="img-thumbnail">'+
 				      '<div class="caption">'+
-				        '<h3>'+title+'</h3>'+
-				        '<p><span clas="thumnail-text-bold">Name:</span>'+name+'</p>'+
-				        
+				        '<h3>'+name+'</h3>'+
 				        '<p><span clas="thumnail-text-bold">Price:</span>'+price+'</p>'+
 				        '<p><span clas="thumnail-text-bold">Description:</span>'+description+'</p>'+
 				        '<p><span clas="thumnail-text-bold">Calories:</span>'+calories+'</p>'+
@@ -167,7 +170,7 @@ function displayFoodCollection(data){
 				    '</div>'+
 				  '</div>';
 		$("#xml-query-results").append(node);
-
+		
 	});
 }
 function removeActive(){
