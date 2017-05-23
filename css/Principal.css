@@ -7,6 +7,9 @@ body{
 	height: 450px !important;
 }
 
+ul.nav-stacked{
+	text-align: center;
+}
 .hidden{
 	display: none;
 }
@@ -19,9 +22,10 @@ body{
 }
 .row-fluid{
 	margin-top: 10px;
-}
-.row-fluid:nth-last-child(1){
 	margin-bottom: 20px;
+}
+h4{
+	color: #FFFFFF;
 }
 footer{
 	background-image: -webkit-linear-gradient(top,#3c3c3c 0,#222 100%);
