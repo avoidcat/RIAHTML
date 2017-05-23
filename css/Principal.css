@@ -10,7 +10,19 @@ body{
 .hidden{
 	display: none;
 }
-
+.img-thumnail{
+	width:70%;
+	margin: auto;
+	height: 300px;
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+}
+.row-fluid{
+	margin-top: 10px;
+}
+.row-fluid:nth-last-child(1){
+	margin-bottom: 20px;
+}
 footer{
 	background-image: -webkit-linear-gradient(top,#3c3c3c 0,#222 100%);
 background-image: -o-linear-gradient(top,#3c3c3c 0,#222 100%);

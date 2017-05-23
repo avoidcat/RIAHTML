@@ -1,0 +1,20 @@
+$(document).ready(function(){
+	$("#btn-xml").click(function(event){
+		event.preventDefault();
+		$("#text-html").addClass("hidden");
+		$("#text-xhtml").addClass("hidden");
+		$("#text-xml").removeClass("hidden");
+	});
+	$("#btn-html").click(function(event){
+		event.preventDefault();
+		$("#text-xml").addClass("hidden");
+		$("#text-xhtml").addClass("hidden");
+		$("#text-html").removeClass("hidden");
+	});
+	$("#btn-xhtml").click(function(event){
+		event.preventDefault();
+		$("#text-html").addClass("hidden");
+		$("#text-xml").addClass("hidden");
+		$("#text-xhtml").removeClass("hidden");
+	});
+});

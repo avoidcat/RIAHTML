@@ -11,7 +11,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.js"  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
 	crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="js/xmlRequest.js"></script>
+	<script src="js/xml.js"></script>
 </head>
 <body>
 	<header class="container-fluid">
@@ -98,22 +98,34 @@
   					</a>
 				</div>
 			</article>
-			<aside class="col-xs-12 col-md-6"></aside>
+			<aside class="col-xs-12 col-md-6">
+				<div class="page-header">
+  					<h1>Why XHTML?</h1>
+  					<h1><small>Many pages on the internet contain "bad" HTML</small></h1>
+				</div>
+				<p class="aside-text">
+					Today's market consists of different browser technologies. Some browsers run on computers, and some browsers run on mobile phones or other small devices. Smaller devices often lack the resources or power to interpret "bad" markup.
+					XML is a markup language where documents must be marked up correctly (be "well-formed").
+					If you want to study XML, please read our XML tutorial.
+					By combining the strengths of HTML and XML, XHTML was developed.
+					XHTML is HTML redesigned as XML.
+				</p>
+			</aside>
 		</section>
 		<section class="row">
 			<article class="col-xs-12">
 				<div class="btn-group btn-group-justified" role="group" aria-label="...">
-					<a href="#" class="btn btn-default" role="button">HTML</a> 
-				 	<a href="#" class="btn btn-default" role="button">XML</a> 
-					<a href="#" class="btn btn-default" role="button">XHTML</a> 
+					<a href="#" class="btn btn-default" id="btn-html" role="button">HTML</a> 
+				 	<a href="#" class="btn btn-default" id="btn-xml" role="button">XML</a> 
+					<a href="#" class="btn btn-default" id="btn-xhtml" role="button">XHTML</a> 
 				</div>
 			</article>
 		</section>
 		<section class="row">
-			<article class="col-xs-12" id="text-hmtl">
+			<article class="col-xs-12 row-fluid " id="text-html">
 				<div class="row">
 					<div class="col-xs-12 col-md-6">
-						<img src="images/html-text-body.jpg" class="img-responsive">
+						<img src="images/html-text-body.jpg" class="img-responsive img-thumnail">
 					</div>
 					<div class="col-xs-12 col-md-6">
 						<h2>HTML is the standard markup language for creating Web pages.</h2>
@@ -128,11 +140,41 @@
 					</div>
 				</div>
 			</article>
-			<article class="col-xs-12" id="text-xml">
-				text
+			<article class="col-xs-12 row-fluid hidden" id="text-xml">
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<img src="images/xml-text-body.png" class="img-responsive img-thumnail">
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<h2>XML is a software- and hardware-independent tool for storing and transporting data.</h2>
+						<ul>
+							
+						    <li>XML stands for eXtensible Markup Language</li>
+						    <li>XML is a markup language much like HTML</li>
+						    <li>XML was designed to store and transport data</li>
+						    <li>XML was designed to be self-descriptive</li>
+						    <li>XML is a W3C Recommendation</li>
+
+						</ul>
+					</div>
+				</div>
 			</article>
-			<article class="col-xs-12" id="text-xhtml">
-				text
+			<article class="col-xs-12 row-fluid hidden" id="text-xhtml">
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<img src="images/xhtml-text-body.png" class="img-responsive img-thumnail">
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<h2>XHTML is HTML written as XML.</h2>
+						<ul>   
+						    <li>XHTML stands for EXtensible HyperText Markup Language</li>
+						    <li>XHTML is almost identical to HTML</li>
+						    <li>XHTML is stricter than HTML</li>
+						    <li>XHTML is HTML defined as an XML application</li>
+						    <li>XHTML is supported by all major browsers</li>
+						</ul>
+					</div>
+				</div>
 			</article>
 		</section>
 	</main>
