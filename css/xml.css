@@ -115,6 +115,15 @@ ul.nav-stacked > li{
 h4{
 	color: #FFFFFF;
 }
+
+.youtube-video{
+	width: 90%;
+	height: 500px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
 footer{
 	background-image: -webkit-linear-gradient(top,#3c3c3c 0,#222 100%);
 background-image: -o-linear-gradient(top,#3c3c3c 0,#222 100%);
@@ -123,7 +132,7 @@ background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
 filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 background-repeat: repeat-x;
-border-radius: 4px;
+
 }
 .bottom-list > li{
 	background: transparent;
@@ -136,4 +145,11 @@ border-radius: 4px;
 .bottom-list > li>a:hover{
 	color: #FFFFFF;
 	text-decoration: none;
+}
+
+canvas{
+	border: solid;
+	margin-left: 25px;
+	margin-top: 15px;
+	margin-bottom: 10px;
 }
