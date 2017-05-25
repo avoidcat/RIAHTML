@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+<meta charset="UTF-8" />
+	
+<title>RIAExample</title>
+	<!-- CSS stylesheet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/xml.css" />
+	<!-- Javascript -->
+	
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+<script src="js/xml.js"></script></head>
+<body>
+	<header class="container-fluid">
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		  
+			<div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    
+				<div class="navbar-header">
+		      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        		<span class="sr-only">Toggle navigation</span>
+		        		<span class="icon-bar" />
+		        		<span class="icon-bar" />
+		        		<span class="icon-bar" />
+		      		</button>
+		      		<a class="navbar-brand" href="xml.xhtml">
+		      			<img class="img-logo" src="images/logo.png" alt="Masters" />
+		      		</a>
+		    	</div>
+		    	<!-- Collect the nav links, forms, and other content for toggling -->
+		    
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="xml.xhtml">Home</a>
+						</li>
+						<li>
+							<a href="ria.html">
+							RIA
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+		
+						<li class="dropdown">
+				         	 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+				          		XML examples 
+				          		<span class="caret" />
+				          	</a>
+				          
+							<ul class="dropdown-menu">
+								            
+								<li>
+									<a href="xml/Books.xml">Books</a>
+								</li>
+									            
+								<li role="separator" class="divider" />
+									            
+								<li>
+									<a href="xml/cd_catalog.xml">CDs</a>
+								</li>
+									            
+								<li role="separator" class="divider" />
+									            
+								<li>
+									<a href="xml/plant_catalog.xml">Plants</a>
+								</li>
+				          	</ul>
+				        </li>
+			      	</ul>
+		    	</div><!-- /.navbar-collapse -->
+		 	</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+	<main class="container-fluid">
+		<section class="row carousel-row">
+			<article class="col-xs-12 col-md-6">	
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active" />				    
+						<li data-target="#myCarousel" data-slide-to="1" />				    
+						<li data-target="#myCarousel" data-slide-to="2" />
+  					</ol>
+  					<!-- Wrapper for slides -->
+					<div class="carousel-inner">   
+						<div class="item active">
+						    <img src="images/slide1.jpg" alt="XHTML" />  	
+							<div class="carousel-caption">
+								<h3>Standarize</h3>
+							        
+								<p>Make sure your document follows the rules</p>
+						    </div>
+						</div>
+						<div class="item">
+						      <img src="images/slide2.png" alt="XML" /> 
+							<div class="carousel-caption">
+								<h3>Share</h3>
+								<p>Send and read information across platforms</p>
+						    </div>
+						</div>
+						    
+						<div class="item">
+						    <img src="images/slide3.jpg" alt="HTML" /> 
+							<div class="carousel-caption">
+								<h3>Display</h3>
+								<p>Display the information and give it structure</p>
+						    </div>
+						</div>
+	  				</div>
+	  				<!-- Left and right controls -->
+	  				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" />
+					    <span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" />
+					    <span class="sr-only">Next</span>
+	  				</a>
+				</div>
+			</article>
+			<aside class="col-xs-12 col-md-6">			
+				<div class="background-rounded background-white custom-padding">
+					<div class="page-header">
+						<h1>Why XHTML?</h1> 
+						<h1><small>Many pages on the internet contain "bad" HTML</small></h1>
+					</div>
+					<p class="aside-text">
+						Today's market consists of different browser technologies. Some browsers run on computers, and some browsers run on mobile phones or other small devices. Smaller devices often lack the resources or power to interpret "bad" markup.
+						XML is a markup language where documents must be marked up correctly (be "well-formed").
+						If you want to study XML, please read our XML tutorial.
+						By combining the strengths of HTML and XML, XHTML was developed.
+						XHTML is HTML redesigned as XML.
+					</p>
+				</div>
+			</aside>
+		</section>
+		<section class="row">
+			<article class="col-xs-12">
+				<div class="background-white background-rounded">
+					<h1>Learn the difference</h1>
+				</div>
+			</article>
+		</section>
+		<section class="row">
+			<article class="col-xs-12">				
+				<div class="btn-group btn-group-justified" role="group" aria-label="...">
+					<a href="#" class="btn btn-black" id="btn-html" role="button">HTML</a> 
+				 	<a href="#" class="btn btn-black" id="btn-xml" role="button">XML</a> 
+					<a href="#" class="btn btn-black" id="btn-xhtml" role="button">XHTML</a> 
+				</div>
+			</article>
+		</section>
+		<section class="row">
+			<article class="col-xs-12 row-fluid " id="text-html">
+				<div class="background-white background-rounded">	
+					<div class="row">	
+						<div class="col-xs-12 col-md-6">
+							<img src="images/html-text-body.jpg" class="img-responsive img-thumnail" alt="" />
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<h2>HTML is the standard markup language for creating Web pages.</h2>
+							<ul>				
+								<li>HTML stands for Hyper Text Markup Language</li>
+								<li>HTML describes the structure of Web pages using markup</li>						    
+								<li>HTML elements are the building blocks of HTML pages</li>						    
+								<li>HTML elements are represented by tags</li>						    
+								<li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>						    
+								<li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="col-xs-12 row-fluid hidden" id="text-xml">
+				<div class="background-white background-rounded">
+					<div class="row">
+						<div class="col-xs-12 col-md-6">
+							<img src="images/xml-text-body.png" class="img-responsive img-thumnail" alt="" />
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<h2>XML is a software- and hardware-independent tool for storing and transporting data.</h2>
+							<ul>						    
+								<li>XML stands for eXtensible Markup Language</li>					    
+								<li>XML is a markup language much like HTML</li>					    
+								<li>XML was designed to store and transport data</li>					    
+								<li>XML was designed to be self-descriptive</li>					    
+								<li>XML is a W3C Recommendation</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="col-xs-12 row-fluid hidden" id="text-xhtml">
+				<div class="background-white background-rounded">
+					<div class="row">
+						<div class="col-xs-12 col-md-6">
+							<img src="images/xhtml-text-body.png" class="img-responsive img-thumnail" alt="" />
+						</div>
+						<div class="col-xs-12 col-md-6">						
+							<h2>XHTML is HTML written as XML.</h2>							
+							<ul>   					    
+								<li>XHTML stands for EXtensible HyperText Markup Language</li>						    
+								<li>XHTML is almost identical to HTML</li>						    
+								<li>XHTML is stricter than HTML</li>						    
+								<li>XHTML is HTML defined as an XML application</li>						    
+								<li>XHTML is supported by all major browsers</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="row">
+			<article class="col-xs-12">
+				
+				<div class="background-white background-rounded">
+					
+					<h1>The use of xml is very simple</h1>
+				</div>
+			</article>
+		</section>
+		<section class="row">
+			<aside class="col-xs-12 col-md-2">	
+					<ul class="nav nav-pills nav-stacked" id="pills">
+										  	
+						<li role="presentation" class="active"><a href="#" id="btn-collection-cd">CDs</a></li>
+											  	
+						<li role="presentation"><a href="#" id="btn-collection-plants">Plants</a></li>
+											  	
+						<li role="presentation"><a href="#" id="btn-collection-books">Books</a></li>
+											  	
+						<li role="presentation"><a href="#" id="btn-collection-food">Food</a></li>
+					</ul>
+			</aside>
+			<article class="col-xs-12 col-md-10 bottom-margin">
+				<div class="background-white background-rounded">		
+					<div class="row" id="xml-query-results">		
+						<div class="col-xs-12 col-md-4 col-md-offset-4">			
+							<h3>Try it yourself</h3>			
+							<p>Here you have some examples of the things you can do by using xml and javascript, select one of the options in the left menu and see what happens.</p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-md-4">
+				<h4>Top 5 Tutorials</h4>				
+				<ul class="list-group bottom-list">					
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/html/default.asp">
+							HTML Tutorial
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/css/default.asp">
+							CSS Tutorial
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/js/default.asp">
+							JavaScript Tutorial
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/bootstrap/default.asp">
+							Bootstrap Tutorial
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/sql/default.asp">
+							SQL Tutorial
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<h4>Top 5 References</h4>
+				<ul class="list-group bottom-list">
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/tags/default.asp">
+						HTML Reference
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/cssref/default.asp">
+						CSS Reference
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/jsref/default.asp">
+							JavaScript Reference
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/php/php_ref_array.asp">
+							PHP Reference
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/jquery/jquery_ref_selectors.asp">
+							jQuery Reference
+						</a>
+					</li>
+				</ul>
+			</div>			
+			<div class="col-xs-12 col-md-4">				
+				<h4>Top 10 Examples</h4>					
+				<ul class="list-group bottom-list">					
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/html/html_examples.asp">
+							HTML Examples
+						</a>
+					</li>					
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/css/css_examples.asp">
+							CSS Examples
+						</a>
+					</li>					
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/js/js_examples.asp">
+							JavaScript Examples
+						</a>
+					</li>					
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/php/php_examples.asp">
+							PHP Examples
+						</a>
+					</li>	
+					<li class="list-group-item">
+						<a href="https://www.w3schools.com/jquery/jquery_examples.asp">
+							jQuery Examples
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+	</footer>
+</body>
+</html>
